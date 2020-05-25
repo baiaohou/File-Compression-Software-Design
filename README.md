@@ -28,7 +28,6 @@ If the user forces compression using the 'force' argument, then compression occu
 
  
 
-Determining If Compression Happens
 To determine if compression results in a smaller file, you'll need to calculate the number of characters/chunks in the original file (your program will compute this by determining character/chunk counts). The size of the compressed file can be calculated from the same counts using the size of each character's encoded number of bits. You must also remember to calculate the file-header information stored in the compressed program. To be more precise, if there are 52 A's, and each A requires 4 bits to encode, then the A's contribute 52*4 = 108 bits to the compressed file. You'll need to make calculations like this for all characters.
 
 The `IHuffHeader` interface specifies a method `headerSize` to help with keeping the code for headers in one place. `Huff.java` will implement the methods from the `IHuffHeader` interface.

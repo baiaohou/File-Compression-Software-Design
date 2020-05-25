@@ -1,4 +1,4 @@
-# File-Compression-Software-Design
+# File Compression Software Design
 
 ### Author: Leo Baiao Hou ***(Implemented in Java)***
 
